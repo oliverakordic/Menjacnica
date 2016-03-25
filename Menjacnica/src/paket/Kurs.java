@@ -11,26 +11,39 @@ public class Kurs {
 		return prodajniKurs;
 	}
 	public void setProdajniKurs(double prodajniKurs) {
+		if(prodajniKurs==0){
+			return;
+		}
 		this.prodajniKurs = prodajniKurs;
 	}
 	public double getKupovniKurs() {
 		return kupovniKurs;
 	}
 	public void setKupovniKurs(double kupovniKurs) {
+		if(kupovniKurs==0){
+			return;
+		}
 		this.kupovniKurs = kupovniKurs;
 	}
 	public double getSrednjiKurs() {
 		return srednjiKurs;
 	}
+	public void setSrednjiKurs(double srednjiKurs) {
+		if(srednjiKurs==0){
+			return;
+		}
+		this.srednjiKurs = srednjiKurs;
+	}
 	public GregorianCalendar getDatum() {
 		return datum;
 	}
 	public void setDatum(GregorianCalendar datum) {
+		if(datum==null){
+			return;
+		}
 		this.datum = datum;
 	}
-	public void setSrednjiKurs(double srednjiKurs) {
-		this.srednjiKurs = srednjiKurs;
-	}
+
 	@Override
 	public String toString() {
 		return "Kurs [prodajniKurs=" + prodajniKurs + ", kupovniKurs="

@@ -8,12 +8,18 @@ public class Valute {
 		return naziv;
 	}
 	public void setNaziv(String naziv) {
+		if(naziv==null) {
+			return;
+		}
 		this.naziv = naziv;
 	}
 	public String getSkraceniNaziv() {
 		return skraceniNaziv;
 	}
 	public void setSkraceniNaziv(String skraceniNaziv) {
+		if(skraceniNaziv==null){
+			return;
+		}
 		this.skraceniNaziv = skraceniNaziv;
 	}
 	@Override
