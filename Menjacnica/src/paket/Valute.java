@@ -22,11 +22,13 @@ public class Valute {
 		}
 		this.skraceniNaziv = skraceniNaziv;
 	}
+	
 	@Override
 	public String toString() {
 		return "Valute [naziv=" + naziv + ", skraceniNaziv=" + skraceniNaziv
 				+ "]";
 	}
+	
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -36,6 +38,7 @@ public class Valute {
 				+ ((skraceniNaziv == null) ? 0 : skraceniNaziv.hashCode());
 		return result;
 	}
+	
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
