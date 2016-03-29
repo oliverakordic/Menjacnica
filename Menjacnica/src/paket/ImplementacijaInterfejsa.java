@@ -1,9 +1,10 @@
 package paket;
 
 import java.util.GregorianCalendar;
+import paket.intefrejs.MenjacnicaInterfejs;
 
 
-public class ImplementacijaInterfejsa {
+public class ImplementacijaInterfejsa implements MenjacnicaInterfejs{
 	public void dodajKursNaDan(GregorianCalendar dan, double kurs){
 		Kurs k = new Kurs();
 		if(dan==null)
