@@ -12,8 +12,17 @@ public class ImplementacijaInterfejsa implements MenjacnicaInterfejs{
 		k.setDatum(dan);
 		k.setProdajniKurs(kurs);
 	}
-	public void brisiKursNaDan(GregorianCalendar dan){}
+	public void brisiKursNaDan(GregorianCalendar dan){
+		Kurs k = new Kurs();
+		if(dan.equals(null))
+			return;
+		k.setProdajniKurs(0);
+		
+	}
 	public double vratiKursNaDan(GregorianCalendar dan){
-		return 0;
+		Kurs k = new Kurs();
+		if(dan.equals(null))
+			return 0;
+		return k.getProdajniKurs();
 	}
 }
