@@ -4,6 +4,7 @@ import interfejs.MenjacnicaInterfejs1;
 
 import java.util.GregorianCalendar;
 
+import interfejs.MenjacnicaInterfejs1;
 
 public class ImplementacijaInterfejsa implements MenjacnicaInterfejs1{
 	public void dodajKursNaDan(GregorianCalendar dan, double kurs){
