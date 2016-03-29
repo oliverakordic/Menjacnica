@@ -9,7 +9,6 @@ import interfejs.MenjacnicaInterfejs1;
 public class ImplementacijaInterfejsa implements MenjacnicaInterfejs1{
 	public void dodajKursNaDan(GregorianCalendar dan, double kurs){
 		Kurs k = new Kurs();
-
 		k.setDatum(dan);
 		k.setProdajniKurs(kurs);
 	}
